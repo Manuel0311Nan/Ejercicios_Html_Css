@@ -25,6 +25,11 @@
   padding: 0 1em 0em 0;
 }
 
+.nav__bar a {
+  text-decoration: none;
+  color: #1559d6;
+}
+
 .nav__footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -90,6 +95,21 @@
   font-family: "Inter", sans-serif;
 }
 
+@media (max-width: 400px) {
+  .formulario__paragraph .formulario {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .formulario .button {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -103,11 +123,10 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   width: 15em;
-  height: 2em;
+  height: 2.5em;
   font-family: "Inter", sans-serif;
 }
 
@@ -118,12 +137,36 @@
   font-family: "Inter", sans-serif;
 }
 
+.formulario .button__media img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  border-radius: 2px;
+  padding: 0.4em;
+}
+
 .formulario .button__media--Facebook {
   background-color: #3b5998;
+  margin-left: 1em;
+  border: 1px solid #3b5998;
+  border-radius: 5px;
 }
 
 .formulario .button__media--Google {
   background-color: cornflowerblue;
+  border: 1px solid cornflowerblue;
+  border-radius: 5px;
+}
+
+.formulario .button__media--Google .logo__google {
+  margin-left: -12px;
 }
 
 .formulario__label {
@@ -153,6 +196,15 @@
   color: rgba(128, 128, 128, 0.295);
   text-transform: uppercase;
   margin: 15px 0 40px 0;
+}
+
+@media (max-width: 400px) {
+  .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 body {
