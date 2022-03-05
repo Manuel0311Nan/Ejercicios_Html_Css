@@ -1,0 +1,63 @@
+@import "../utilities/variables";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.formulario {
+  display: flex;
+  flex-direction: column;
+  &__paragraph{
+  font-family: $tipografia;
+  }
+  .button {
+    display: flex;
+    justify-content: flex-start;
+
+    &__media {
+      display: flex;
+      justify-content: center;
+      width: 15em;
+      height: 2em;
+      font-family: $tipografia;
+      a{
+        text-decoration: none;
+        color:white;
+        margin-left: 0.5em;
+        font-family: $tipografia;
+      }
+      &--Facebook {
+        background-color: #3b5998;
+      }
+      &--Google {
+        background-color: cornflowerblue;
+      }
+    }
+  }
+  &__label{
+    font-family: $tipografia;
+    a{
+      color: rgb(21, 89, 214);
+      text-decoration: none;
+    }
+  }
+  &__input{
+    width: 50%;
+    border: 1px solid grey;
+    border-radius: 3px;
+    padding:0.2em;
+    margin-bottom: 12px;
+  }
+  &__btn-submit{
+    padding: 12px;
+    width: 40%;
+    border:dotted 3px grey;
+    border-radius: 25px;
+    background-color: white;
+    font-family: $tipografia;
+    color: rgba(128, 128, 128, 0.295);
+    text-transform: uppercase;
+    margin: 15px 0 40px 0;
+  }
+}

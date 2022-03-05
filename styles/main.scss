@@ -1,0 +1,13 @@
+// block
+@import "./block/navbar";
+@import "./block/footer";
+@import "./block/container";
+
+// utilities
+@import "./utilities/variables";
+
+
+
+body{
+    font-size: $titleSize;
+}
