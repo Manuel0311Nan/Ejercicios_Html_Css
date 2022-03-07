@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Encabezado*/
+
+h1 {
+  margin-bottom: 10px;
+}
+
+/* Formulario */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1em;
+  width:90%;
+  text-align:justify;
+}
+@media screen and (min-width: 576px) {
+  .container{
+    display: flex;
+    flex-direction: row;
+    margin-right:1em ;
+  }
+}
+.logo-mailchimp {
+  display: flex;
+  justify-content:center;
+  align-items: flex-start;
+  width: 200px;
+  margin: 0 0 1em 0;
+}
+@media screen and (min-width: 576px) {
+  .logo-mailchimp{
+    margin: 0 5em 20em 1.5em;
+  }
+}
+/* Detalles */
+.log__in {
+  text-decoration: none;
+  color:rgb(24, 141, 122)
+
+}
+.formulario {
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+}
+.formulario__input {
+  padding: 0.8rem 1rem;
+  margin: 0.5rem 0;
+  color: #545457;
+  font-size: 1em;
+  box-sizing: border-box;
+}
+.conditions__formulario {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-auto-flow: dense;
+  list-style: none;
+}
+ul li::before {
+  content: "\2022";
+  color: rgb(24, 141, 122);
+  font-size: 20px;
+  display: inline-block;
+  width: 0.5em;
+  text-align:justify;
+}
+/* section2 */
+.formulario__section2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-top: 1em;
+}
+.formulario__section2--btn-submit {
+  background-color: white;
+  padding: 0.1rem;
+  border: 1px solid rgba(128, 128, 128, 0.26);
+  width: 10em;
+}
+@media screen and (min-width: 576px) {
+  .formulario__section2--btn-submit{
+    width: 15em;
+  }
+ }
+.formulario__section2--container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1em;
+}
+.formulario__section2--checkbox {
+  border: 1px solid rgba(209, 209, 209, 0.431);
+}
+.formulario__label {
+  display: flex;
+  flex-direction: row;
+  margin-left: 1em;
+}
+.button__information {
+  margin-top: 3em;
+  text-align:justify;
+}
+.button__information a{
+  color:rgb(24, 141, 122)
+}

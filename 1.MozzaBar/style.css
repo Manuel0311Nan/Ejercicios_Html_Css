@@ -1,0 +1,16 @@
+*{
+    margin:0;
+    padding: 0;
+}
+.galeria{
+    display: grid;
+    grid-auto-rows: minmax(150px, 1fr);
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+.galeria__card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}

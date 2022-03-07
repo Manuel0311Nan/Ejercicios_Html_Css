@@ -1,0 +1,11 @@
+@import "../utilities/variables";
+
+.header__store{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: $fontStore;
+    &__nav1{
+        font-family: $fontStore;
+    }
+}

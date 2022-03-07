@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 90%;
+}
+
+.nav__bar{
+    text-decoration: none;
+    list-style-type: none;
+    display:flex;
+    flex-direction: row;
+}
+.nav__bar--logo{
+    display:flex;
+    flex-direction: row;
+    margin-right: 20px;
+}
+ul{
+    list-style-type:symbols(&#8827);
+    display: flex;
+
+}
+ul li{
+    list-style-type:symbols(&#8827);
+    margin-right: 20px;
+    text-decoration: none;
+}
+.h1__titular{
+    border-left: solid 5px red;
+    padding-left: 25px;
+    margin-bottom: 1em;
+}
