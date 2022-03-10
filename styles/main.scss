@@ -5,9 +5,4 @@
 
 // utilities
 @import "./utilities/variables";
-
-
-
-body{
-    font-size: $titleSize;
-}
+@import "./utilities/responsive"
