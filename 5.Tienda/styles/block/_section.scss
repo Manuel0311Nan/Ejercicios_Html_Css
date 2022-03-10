@@ -1,0 +1,29 @@
+@import "../utilities/variables";
+
+.catalogo{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1em;
+    width: 100%;
+    @media screen and (max-width: 450px){
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    &__card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+&--img{
+    max-width: 100%;
+}
+h2,p{
+    font-size: 15px;
+    @media screen and (max-width: 450px){
+        font-size: 9px;
+    }
+}
+    }
+
+}
