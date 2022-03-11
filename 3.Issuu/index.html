@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="./styles/style.css" /> -->
+    <link rel="stylesheet" href="./styles/main.css" />
+    <title>Ejercicio Issuu</title>
+  </head>
+  <body>
+    <header class="nav__bar">
+      <img src="./assets/images/issuu.PNG" alt="Logoissu" class="logo" />
+      <nav class="nav__bar--signIn">
+        <p>Already a user?</p>
+        <a href="#">Sign in</a>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <h1>Create an Issuu Account</h1>
+        <form class="formulario" autocomplete="off" action="#">
+          <div class="button">
+            <button class="button__media button__media--Google">
+              <img class="logo__google" src="./assets/images/google.png" alt="Logo-google">
+              <a href="#">Sign in with Google</a>
+            </button>
+            <button class="button__media button__media--Facebook">
+              <img class="logo__gfacebook" src="./assets/images/facebook.png" alt="logo-facebook">
+              <a href="#">Continue with Facebook</a>
+            </button>
+          </div>
+          <p class="formulario__paragraph">Or with email</p>
+          <label for="email" class="formulario__label">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="user_email"
+            placeholder="e.g doe@gmail.com"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}"
+            class="formulario__input"
+            required
+          />
+          <label for="pwd" class="formulario__label">Contraseña</label>
+          <input
+            type="password"
+            id="pwd"
+            name="user_pwd"
+            placeholder="ojo"
+            pattern="[A-Za-z0-9]{6,10}"
+            class="formulario__input"
+            required
+          />
+          <div class="formulario__checkbox--container">
+            <input
+              type="checkbox"
+              id="vip"
+              name="user_vip"
+              required
+              class="formulario__checkbox"
+            />
+            <label for="vip" class="formulario__label"
+              >I accept the <a href="#">Terms of Service</a> and the
+              <a href="#">Professional Terms of Service</a>
+            </label>
+          </div>
+          <button type="submit" class="formulario__btn-submit">
+            create account
+          </button>
+        </form>
+      </div>
+    </main>
+    <footer class="nav__footer">
+      <a href="#">Issuu Inc</a>
+      <nav>
+        <ul class="nav__footer--navegador">
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">DMCA</a></li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>
